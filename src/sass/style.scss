@@ -8,6 +8,7 @@
 @import 'blocks/buttons';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
+@import 'blocks/information';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -29,4 +30,8 @@ a {
         color: #000;
         text-decoration: none;
     }
+}
+
+.divider {
+    @include divider;
 }

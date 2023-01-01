@@ -1,0 +1,22 @@
+a.btn {
+    background-color: $main-color;
+    padding: 0 25px;
+    height: 45px;
+    line-height: 45px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.1s;
+    &_no-bg {
+        background-color: rgba(0,0,0,0);
+        box-shadow: none;
+    }
+    &_msg {
+        width: 220;
+    }
+    &:active {
+        margin-top: 4px;
+        box-shadow: none;
+    }
+}

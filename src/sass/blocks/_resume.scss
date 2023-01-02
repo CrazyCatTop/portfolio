@@ -1,0 +1,96 @@
+.resume {
+    h2 {
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        z-index: 2;
+        padding: 6px 0 6px 0;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrapper {
+        padding: 60px 75px 0 75px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 140px;
+    }
+    &__column {
+        padding-left: 50px;
+    }
+    h3 {
+        position: relative;
+        z-index: 2;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 7.5px;
+            left: -50px;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: $main-color;
+            z-index: -1;
+        }
+    }
+    ul {
+        list-style-type: none;
+        position: relative;
+        z-index: 2;
+        &::before {
+            position: absolute;
+            content: '';
+            top: -52.5px;
+            left: -43px;
+            width: 1px;
+            height: calc(100% + 50px);
+            background-color: #000;
+            z-index: -1;
+        }
+    }
+    &__item {
+        margin-top: 45px;
+        position: relative;
+        z-index: 2;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 17px;
+            left: -42px;
+            width: 43px;
+            height: 1px;
+            background-color: #000;
+            z-index: -1;
+        }
+        &__head {
+            display: flex;
+        }
+        &__icon {
+            min-width: 56px;
+            position: relative;
+            @include before_circle;
+            padding: 15px 0 0 15px;
+            z-index: 2;/* 
+            &_short {
+                padding: 15px 0 0 17px;
+            } */
+        }
+        h4 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__description, &__body {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &__body {
+            margin-top: 12px;
+        }
+    }
+}

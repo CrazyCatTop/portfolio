@@ -23,3 +23,10 @@ menu_social_links.querySelectorAll('a').forEach(function(link) {
         menu.classList.remove('active');
     });
 });
+
+const skills_values = document.querySelectorAll('.progress__value'),
+      skills_scales = document.querySelectorAll('.progress__item__scale');
+
+skills_values.forEach( (value, i) => {
+    skills_scales[i].style.width = value.innerHTML;
+});

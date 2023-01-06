@@ -60,10 +60,7 @@
             position: relative;
             @include before_circle;
             padding: 15px 0 0 15px;
-            z-index: 2;/* 
-            &_short {
-                padding: 15px 0 0 17px;
-            } */
+            z-index: 2;
         }
         h4 {
             font-weight: 700;

@@ -18,4 +18,18 @@
     &_fs48 {
         font-size: 48px;
     }
+    &_circle-center {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        z-index: 2;
+        padding: 6px 0 6px 0;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &_center {
+        text-align: center;
+    }
 }

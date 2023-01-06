@@ -1,4 +1,4 @@
-a.btn {
+.btn {
     background-color: $main-color;
     padding: 0 25px;
     height: 45px;
@@ -8,15 +8,21 @@ a.btn {
     font-size: 14px;
     text-align: center;
     transition: 0.1s;
+    border: none;
+    outline: none;
     &_no-bg {
         background-color: rgba(0,0,0,0);
         box-shadow: none;
     }
     &_msg {
-        width: 220;
+        padding: 0;
+        width: 220px;
     }
     &:active {
         margin-top: 4px;
         box-shadow: none;
+    }
+    &:focus {
+        outline: none;
     }
 }

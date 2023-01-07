@@ -9,7 +9,9 @@
     &__photo {
         grid-row: 1 / 3;
         img {
+            object-fit: cover;
             width: 100%;
+            height: 100%;
         }
     }
     &__subtitle {
@@ -92,7 +94,29 @@
         display: flex;
         align-items: center;
         input {
+            visibility: hidden;
+            width: 11px;
             margin-right: 10px;
+            position: relative;
+            z-index: 2;
+            &::before {
+                visibility: visible;
+                vertical-align: center;
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 11px;
+                height: 11px;
+                border: 1px solid #000;
+            }
+            &:checked {
+                &::before {
+                    content: '\2713';
+                    line-height: 10px;
+                    background-color: rgba(255, 114, 140, 0.3);
+                }
+            } 
         }
         a {
             color: blue;

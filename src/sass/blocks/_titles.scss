@@ -1,6 +1,5 @@
 .title {
     font-weight: 700;
-    font-size: 36px;
     line-height: 60px;
     margin-bottom: 0;
     &_fs14 {
@@ -14,6 +13,9 @@
     &_fs20 {
         font-size: 20px;
         line-height: 30px;
+    }
+    &_fs36 {
+        font-size: 36px;
     }
     &_fs48 {
         font-size: 48px;

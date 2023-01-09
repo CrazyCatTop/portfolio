@@ -1,9 +1,8 @@
 .contacts {
     &__wrapper {
-        padding: 0 44px;
+        padding: 0 36.5px;
         display: grid;
-        padding-right: 100px;
-        grid-template-columns: 400px 570px;
+        grid-template-columns: 400px 585px;
         column-gap: 70px;
     }
     &__photo {
@@ -50,7 +49,7 @@
                 height: 100%;
                 border: 1px solid #000000;
                 padding: 0 20px;
-                font-size: 12;
+                font-size: 12px;
                 font-weight: 500;
             }
         }
@@ -64,7 +63,7 @@
                 height: 100%;
                 border: 1px solid #000000;
                 padding: 20px;
-                font-size: 12;
+                font-size: 12px;
                 font-weight: 500;
             }
         }
@@ -86,6 +85,9 @@
         column-gap: 35px;
         display: grid;
         grid-template-columns: repeat(2, auto);
+        br {
+            display: none;
+        }
     }
     &__policy {
         padding-bottom: 4px;

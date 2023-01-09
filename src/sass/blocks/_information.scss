@@ -3,7 +3,7 @@
         display: grid;
         padding-right: 100px;
         grid-template-columns: 400px 570px;
-        grid-template-rows: 240px minmax(320px, auto);
+        grid-template-rows: minmax(240px, auto) minmax(320px, auto);
         gap: 40px 70px;
     }
     &__photo {

@@ -3,13 +3,17 @@ const hamburger = document.querySelector('.hamburger'),
       closeCross = document.querySelector('.menu__close'),
       menu_links = document.querySelectorAll('.menu__link'), 
       menu_social_links = document.querySelector('.menu__social');
-
+      
 hamburger.addEventListener('click', () => {
+    let scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
     menu.classList.add('active');
+    document.body.style.cssText = `overflow:hidden;margin-right:${scrollBarWidth}px;background-color:#BED9EC`;
 });
 
 closeCross.addEventListener('click', function() {
     menu.classList.remove('active');
+    document.body.style.cssText = '';
 });
 
 menu_links.forEach(function(link) {
